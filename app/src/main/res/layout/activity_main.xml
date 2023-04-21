@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textView_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/player_one"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="wenas"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/imageButton_second"
+        app:layout_constraintTop_toBottomOf="@id/textVieu_Score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textVieu_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/playerOne_score"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintStart_toEndOf="@id/textView_p1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintBottom_toTopOf="@id/imageButton_fourth"
+        app:layout_constraintEnd_toStartOf="@id/imageButton_second"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintBottom_toTopOf="@id/imageButton_fifth"
+        app:layout_constraintEnd_toEndOf="@id/imageButton_fifth"
+        app:layout_constraintStart_toStartOf="@id/imageButton_fifth" />
+
+    <ImageButton
+        android:id="@+id/imageButton_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageButton_second"
+        app:layout_constraintTop_toTopOf="@id/imageButton_second" />
+
+    <ImageButton
+        android:id="@+id/imageButton_fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageButton_fifth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_fifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_sixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton_fifth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageButton_fifth"
+        app:layout_constraintTop_toTopOf="@id/imageButton_fifth" />
+
+    <ImageButton
+        android:id="@+id/imageButton_seventh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintEnd_toEndOf="@id/imageButton_fourth"
+        app:layout_constraintStart_toStartOf="@id/imageButton_fourth"
+        app:layout_constraintTop_toBottomOf="@id/imageButton_fourth" />
+
+    <ImageButton
+        android:id="@+id/imageButton_eighth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintEnd_toEndOf="@id/imageButton_fifth"
+        app:layout_constraintStart_toStartOf="@id/imageButton_fifth"
+        app:layout_constraintTop_toBottomOf="@id/imageButton_fifth" />
+
+    <ImageButton
+        android:id="@+id/imageButton_nineth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/lvl_tictac"
+        app:layout_constraintEnd_toEndOf="@id/imageButton_sixth"
+        app:layout_constraintStart_toStartOf="@id/imageButton_sixth"
+        app:layout_constraintTop_toBottomOf="@id/imageButton_sixth" />
+
+    <TextView
+        android:id="@+id/textVieu_Score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/playerOne_score"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textView_p2" />
+
+    <TextView
+        android:id="@+id/textView_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/player_two"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
